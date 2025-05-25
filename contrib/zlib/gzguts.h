@@ -39,6 +39,10 @@
 #  include <io.h>
 #endif
 
+#if defined(__EMSCRIPTEN__)
+#include <unistd.h>
+#endif
+
 #if defined(_WIN32)
 #  define WIDECHAR
 #endif
